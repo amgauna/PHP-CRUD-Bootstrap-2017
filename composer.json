@@ -1,7 +1,12 @@
-$ composer init --require=foo/bar:1.0.0 -n
-$ cat composer.json
 {
     "require": {
-        "foo/bar": "1.0.0"
+        "doctrine/orm": "^2.5",
+        "doctrine/dbal": "^2.5",
+        "symfony/yaml": "^3.2"
+    },
+    "autoload":{
+        "psr-4":{
+            "DiegoBrocanelli\\":"src/"
+        }
     }
 }
